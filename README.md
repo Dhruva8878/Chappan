@@ -24,7 +24,6 @@ https://chappan.netlify.app/
 <li>HTML</li>
 <li>css</li>
 <li>javascript</li>  
-<li>font Awesom icons</li>
 <li>Material ui</li>
 <li>antd</li>
 
