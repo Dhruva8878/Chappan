@@ -1,23 +1,16 @@
-# Banggood-Site Clone
-This is a clone of a chinese E-commerce website called bangood. It includes user flow of where user select products from Men's and Womens's cloting pages, add to cart, procced 
-to checkout, add the paymnet details and place a order. Users also can regsiter and Signin. There is also sort by functionlity included in Men's and Women's page, where users 
-can sort hign to low and low to high.
-
+# Chappan
+This is a enterely new website called Chappan. It is famous food area in Indore city, where you can eat 56 types of delicious meals at one place on affordable prices with great taste and feel of heaven. 
 ---
 
 ### Netlify Link
 
-https://onlinebanggood.netlify.app/
+https://chappan.netlify.app/
 
 
 ---
 
-### Team Members
+### Team Member
 
-- **[Praful Telgote]**
-- **[Jitesh Babani]**
-- **[Tayyab Ali]** 
-- **[Aftab Alam]**
 - **[Dhruv Gupta]**
 
 ---
@@ -26,38 +19,46 @@ https://onlinebanggood.netlify.app/
 
 ## Tech Stack Used : -
 
-- #### Languages
-  - `HTML`
-  - `CSS`
-  - `JavaScript`
+<li>React</li>
+<li>Redux</li>
+<li>HTML</li>
+<li>css</li>
+<li>javascript</li>  
+<li>font Awesom icons</li>
+<li>Material ui</li>
+<li>antd</li>
 
 ---
 
 
 ### Landing page
 
-![](/website-pictures/landing-page.png)
+![](https://miro.medium.com/max/786/1*12zOnOehDt1DfnBSzKcEow.webp)
 
 ### Product page
 
 ![](https://miro.medium.com/max/786/1*T-Sx5w8abiXsEMtuA_L1qw.webp)
 
-### Women's Clothing page
-
-![](/website-pictures/womens-page.png)
-
 ### Cart page
 
-![](/website-pictures/cart-page.png)
+![](https://miro.medium.com/max/786/1*u5spTYyVVEocWBTJBHiDTg.webp)
 
-### Sign In/ Register page
+### Description page
 
-![](/website-pictures/register-page.png)
+![](https://miro.medium.com/max/786/1*Zv5nzA1zZ_hfjBbJYiPq1Q.webp)
 
-### Payment page
+### About page
 
-![](/website-pictures/payment-page.png)
+![](https://miro.medium.com/max/1400/1*535TU2AtzETdBHOFp880Sg.webp)
+
+### Login/ Register page
+
+![](https://miro.medium.com/max/786/1*SzeKvrAkmJeyZtjXZRHQhA.webp)
+
+### Signup page
+
+![](https://miro.medium.com/max/786/1*Pp5_uAXmtRtJC3mQowyrGg.webp)
 
 ### Netlify Link
 
-https://onlinebanggood.netlify.app/
+https://chappan.netlify.app/
