@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Banggood-Site Clone
+This is a clone of a chinese E-commerce website called bangood. It includes user flow of where user select products from Men's and Womens's cloting pages, add to cart, procced 
+to checkout, add the paymnet details and place a order. Users also can regsiter and Signin. There is also sort by functionlity included in Men's and Women's page, where users 
+can sort hign to low and low to high.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+### Netlify Link
 
-In the project directory, you can run:
+https://onlinebanggood.netlify.app/
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Team Members
 
-### `npm test`
+- **[Praful Telgote]**
+- **[Jitesh Babani]**
+- **[Tayyab Ali]** 
+- **[Aftab Alam]**
+- **[Dhruv Gupta]**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Tech Stack Used : -
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- #### Languages
+  - `HTML`
+  - `CSS`
+  - `JavaScript`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Landing page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![](/website-pictures/landing-page.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Men's Clothing page
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![](/website-pictures/mens-page.png)
 
-## Learn More
+### Women's Clothing page
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![](/website-pictures/womens-page.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Cart page
 
-### Code Splitting
+![](/website-pictures/cart-page.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### Sign In/ Register page
 
-### Analyzing the Bundle Size
+![](/website-pictures/register-page.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Payment page
 
-### Making a Progressive Web App
+![](/website-pictures/payment-page.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Netlify Link
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://onlinebanggood.netlify.app/
