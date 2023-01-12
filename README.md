@@ -38,9 +38,9 @@ https://onlinebanggood.netlify.app/
 
 ![](/website-pictures/landing-page.png)
 
-### Men's Clothing page
+### Product page
 
-![](/website-pictures/mens-page.png)
+![](https://miro.medium.com/max/786/1*T-Sx5w8abiXsEMtuA_L1qw.webp)
 
 ### Women's Clothing page
 
