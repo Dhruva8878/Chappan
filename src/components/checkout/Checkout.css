@@ -1,0 +1,17 @@
+.chkmain {
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 500px;
+    width:80%;
+    margin: auto;
+    text-align: center;
+
+}
+
+.chkmain input{
+    width:300px;
+    height: 20px;
+}
+.cbtn{
+    margin-top: 20px;
+}
