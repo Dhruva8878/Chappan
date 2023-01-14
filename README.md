@@ -1,5 +1,5 @@
 # Chappan
-This is a enterely new website called Chappan. It is famous food area in Indore city, where you can eat 56 types of delicious meals at one place on affordable prices with great taste and feel of heaven. 
+This is a entirely new website called Chappan. It is famous food area in Indore city, where you can eat 56 types of delicious meals at one place on affordable prices with great taste and feel of heaven. 
 ---
 
 ### Netlify Link
