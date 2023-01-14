@@ -36,7 +36,7 @@ export const Product = () => {
   if (!meals) return null;
 
   return (
-    <div>
+    <div className="pdbox">
       <div className="box">
         {arr.map((v, i) => {
           return (

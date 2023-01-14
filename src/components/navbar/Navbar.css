@@ -3,7 +3,6 @@
   height: 350px;
   margin-top: -10px;
   background-image: url("https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png");
-  margin-bottom: 20px;
 }
 
 .box1 {
@@ -43,7 +42,6 @@
 }
 .box2 > h1 {
   font-size: 40px;
-  /* height: 30px; */
   font-family: sans-serif;
 }
 .box2 h1:nth-child(2) {
@@ -63,18 +61,39 @@
   height: 29px;
   border: 1px solid pink;
 }
-.user{
+.user {
   display: flex;
   color: white;
-  width:250%;
+  width: 250%;
 }
-.user1{
+.user1 {
   width: fit-content;
-  font-weight: lighter; 
+  font-weight: lighter;
 }
-.user2{
+.user2 {
   border: 1px solid pink;
   font-weight: lighter;
   padding: 5px;
+  margin-left: 10px;
+}
+
+.navinp {
+  background: white;
+  width:30%;
+  margin:auto;
+  display: flex;
+}
+.navinp > input {
+  border: none;
+  outline: none;
+  width: 65%;
+  height: 30px;
+  color:black;
+  margin-left: 10px;
+}
+.navinp > select {
+  border: none;
+  outline: none;
+  height: 30px;
   margin-left: 10px;
 }

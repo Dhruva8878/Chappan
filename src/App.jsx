@@ -11,12 +11,23 @@ import { SignUp } from "./components/login/SignUp";
 import { Checkout } from "./components/checkout/Checkout";
 import { PrivateComponent } from "./components/context/PrivateComponent";
 import { Notfound } from "./components/notfound/Notfound";
-
+import "./App.css"
 
 function App() {
+  const arr = [
+    "/",
+    "/product",
+    "/cart",
+    "/about",
+    "/login",
+    "/description",
+    "/signup",
+    "/checkout",
+  ];
+  const pathname = window.location.pathname;
   return (
     <div className="App">
-       <Navbar /> 
+      {arr.includes(pathname) ? <Navbar /> : <></>}
 
       <Routes>
         <Route path="/" element={<Home />}></Route>
@@ -40,11 +51,11 @@ function App() {
           element={
             <PrivateComponent>
               <Checkout />
-            </PrivateComponent>
+           </PrivateComponent>
           }
         ></Route>
       </Routes>
-     <Footer /> 
+      {arr.includes(pathname) ? <Footer /> : <></>}
     </div>
   );
 }

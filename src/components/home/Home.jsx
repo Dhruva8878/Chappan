@@ -38,7 +38,7 @@ export const Home = () => {
   }, [text]);
 
   return (
-    <>
+    <div className="classbgcolor">
       <div>
         <Corosel />
 
@@ -55,10 +55,10 @@ export const Home = () => {
         </div>
 
         <div className="Main">
-          <ImageList sx={{ width: 1170, height: 350 }} cols={4} rowHeight={350}>
+          <ImageList sx={{ width: 1188, height: 350 }} cols={3} rowHeight={450}>
             {meals.map((e) => {
               return (
-                <>
+                <div className="classbgcolor">
                   <ImageListItem key={e.img}>
                     <img
                       src={`${e.strMealThumb}?w=164&h=164&fit=crop&auto=format`}
@@ -75,12 +75,12 @@ export const Home = () => {
                       <Link to={"/description"}>Show Details</Link>
                     </Button>
                   </ImageListItem>
-                </>
+                </div>
               );
             })}
           </ImageList>
         </div>
       </div>
-    </>
+    </div>
   );
 };

@@ -27,16 +27,17 @@ export const SignUp = () => {
   };
 
   return (
-    <>
+    <div className="sgbox">
       <div className="signbox">
-        <h2>Signup</h2>
+        <h2>SignUp</h2>
 
         <form onSubmit={(e) => handleData(e)}>
           <div>
-            <h4>Enter Name</h4>
+            <h4> Name :</h4>
             <input
               required
               className="formlog"
+              placeholder="Enter Your Name"
               name="name"
               onChange={(e) => {
                 setName(e.target.value);
@@ -46,10 +47,11 @@ export const SignUp = () => {
           </div>
 
           <div>
-            <h4>Enter Email</h4>
+            <h4> Email :</h4>
             <input
               required
               className="formlog"
+              placeholder="Enter Your Email"
               name="email"
               onChange={(e) => {
                 setEmail(e.target.value);
@@ -59,10 +61,11 @@ export const SignUp = () => {
           </div>
 
           <div>
-            <h4>Enter Password</h4>
+            <h4> Password :</h4>
             <input
               required
               className="formlog"
+              placeholder="Enter Your Password"
               name="password"
               onChange={(e) => {
                 setPassword(e.target.value);
@@ -74,9 +77,9 @@ export const SignUp = () => {
           <input className="loginbtn" type="submit" value={"continue"} />
         </form>
         <div>
-          <p>already have account ? </p> <Link to={"/login"}>Login</Link>
+          <p>Already a User ! <Link to={"/login"}>Login</Link></p> 
         </div>
       </div>
-    </>
+    </div>
   );
 };

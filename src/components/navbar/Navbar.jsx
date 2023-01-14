@@ -3,6 +3,7 @@ import "./Navbar.css";
 import { Input } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutUser } from "../redux/login/LoginAction";
+import SearchIcon from "@mui/icons-material/Search";
 export const Navbar = () => {
   const data = useSelector((state) => state.login.LoginData);
   const dispatch = useDispatch();
@@ -49,6 +50,16 @@ export const Navbar = () => {
         <div className="box2">
           <h1>Chappan</h1>
           <h1>Discover the best food</h1>
+          <div className="navinp">
+            <select name="" id="">
+              <option value="indore">Indore</option>
+            </select>
+            <input
+              type="text"
+              placeholder="Get the delicious food of Chappan !!!"
+            />
+            <SearchIcon style={{ color: "grey" , padding:'5px' }} sx={{ "&:hover": { cursor:'pointer',color: "green" } }}/>
+          </div>
         </div>
       </div>
     </>

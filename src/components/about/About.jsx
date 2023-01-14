@@ -2,24 +2,19 @@ import "./About.css";
 
 export const About = () => {
   return (
-    <>
+    <div className="abt">
       <h1 style={{ marginLeft: "20px" }}>Who are we ?</h1>
       <div className="aboutbox">
         <div>
           <p style={{ textAlign: "left" }}>
-            Launched in 2010, Our technology platform connects customers,
-            restaurant partners and delivery partners, serving their multiple
-            needs. Customers use our platform to search and discover
-            restaurants, read and write customer generated reviews and view and
-            upload photos, order food delivery, book a table and make payments
-            while dining-out at restaurants. On the other hand, we provide
-            restaurant partners with industry-specific marketing tools which
-            enable them to engage and acquire customers to grow their business
-            while also providing a reliable and efficient last mile delivery
-            service. We also operate a one-stop procurement solution, Hyperpure,
-            which supplies high quality ingredients and kitchen products to
-            restaurant partners. We also provide our delivery partners with
-            transparent and flexible earning opportunities.
+            Chappan Dukan, it tops the priority list of all foodies and is a
+            perfect family hangout. As the name suggests, this market has
+            fifty-six shops, making it truly Disney's land for food lovers. It
+            showcases a wide variety of cuisines ranging from snacks to chats,
+            milkshakes, ice cream, juices, sweet meats, all in one place. Other
+            attractions here include pony rides, balloon shooting, camel rides,
+            small swings. Its easy on-pocket menu and lively ambiance make
+            people visit it again and again.
           </p>
         </div>
         <div>
@@ -29,6 +24,6 @@ export const About = () => {
           />
         </div>
       </div>
-    </>
-  );
+    </div>
+  )
 };

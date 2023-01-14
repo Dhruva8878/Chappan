@@ -1,13 +1,14 @@
 import { Button, Image } from "antd";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { removeItem } from "../redux/cart/action";
 import "./Cart.css";
 
 export const Cart = () => {
   const items = useSelector((state) => state.cart.todos);
   const dispatch = useDispatch();
+  const navigate = useNavigate();
   const [totalPrice, setTotalPrice] = useState(0);
 
   const handleDelete = (id) => {
@@ -25,7 +26,17 @@ export const Cart = () => {
   }, [items]);
 
   if (items.length == 0) {
-    return <h1 style={{textAlign: "center"}}>No Items added To cart</h1>;
+    return (
+      <div className="emptycart">
+        <button
+          onClick={() => {
+            navigate("/product");
+          }}
+        >
+          Go Shopping
+        </button>
+      </div>
+    );
   }
 
   return (

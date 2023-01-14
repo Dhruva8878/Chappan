@@ -44,16 +44,16 @@ export const Login = () => {
   };
 
   return (
-    <>
+    <div className="lgbox">
       <div className="loginbox">
-        <h2>Login & Register</h2>
-
+        <h2>Login</h2>
         <form onSubmit={handleLogin}>
           <div>
             <h4>Enter Email</h4>
             <input
               required
               className="formlog"
+              placeholder="Enter Your Email"
               type="email"
               onChange={(e) => {
                 setEmail(e.target.value);
@@ -66,6 +66,7 @@ export const Login = () => {
             <input
               required
               className="formlog"
+              placeholder="Enter Your Password"
               type="password"
               onChange={(e) => {
                 setPassword(e.target.value);
@@ -73,13 +74,15 @@ export const Login = () => {
             />
           </div>
 
-          <input className="loginbtn" type="submit" value={"continue"} />
+          <input className="loginbtn" type="submit" value={"Login"} />
         </form>
 
         <div>
-          <p>don't have account ? </p> <Link to={"/signup"}>SignUp</Link>
+          <p>
+            New User! <Link to={"/signup"}>SignUp</Link>{" "}
+          </p>
         </div>
       </div>
-    </>
+    </div>
   );
 };

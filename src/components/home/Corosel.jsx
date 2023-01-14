@@ -16,9 +16,9 @@ export const Corosel = () => {
   }, []);
 
   return (
-    <>
-      <h1 style={{ textAlign: "center" }}>Collections</h1>
-      <h4 style={{ textAlign: "center" }}>
+    <div className="coro">
+      <h1 style={{ textAlign: "center" ,color : 'grey' }}>COLLECTION'S</h1>
+      <h4 style={{ textAlign: "center" ,color : 'grey' }}>
         Explore curated lists of top foods
       </h4>
 
@@ -37,6 +37,6 @@ export const Corosel = () => {
           );
         })}
       </Carousel>
-    </>
+    </div>
   );
 };

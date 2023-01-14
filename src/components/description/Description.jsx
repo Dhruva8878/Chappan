@@ -37,7 +37,7 @@ export const Description = () => {
   }, []);
 
   return (
-    <>
+    <div className="desc">
       {meal.map((e, i) => {
         id = i * 5;
         return (
@@ -70,16 +70,23 @@ export const Description = () => {
                 </p>
 
                 <h4>Instructions :-</h4>
-                <p> {e.strInstructions}</p>
+                <p style={{textAlign : "left"}}> {e.strInstructions}</p>
                 <Button
+                  style={{ marginRight: "5px" ,marginBottom : "10px" }}
                   onClick={() => {
                     navigate("/product");
                   }}
                 >
                   Back To Products
                 </Button>
-                <Button onClick={AddCart}>Add To Cart</Button>
                 <Button
+                  style={{ marginRight: "5px" ,marginBottom : "10px" }}
+                  onClick={AddCart}
+                >
+                  Add To Cart
+                </Button>
+                <Button  
+                  style={{ marginBottom : "10px"}}
                   onClick={() => {
                     navigate("/cart");
                   }}
@@ -91,6 +98,6 @@ export const Description = () => {
           </>
         );
       })}
-    </>
+    </div>
   );
 };

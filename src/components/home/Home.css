@@ -3,13 +3,11 @@
   grid-template-columns: repeat(8, 1fr);
   justify-content: space-around;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 .Main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  width: 97%;
   margin: auto;
   background-color: linen;
 }
@@ -18,4 +16,9 @@
   height: 250px;
   margin: auto;
   border-radius: 30px;
+}
+.classbgcolor{
+  background-image: url("./img1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
