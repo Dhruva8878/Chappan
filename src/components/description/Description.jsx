@@ -2,7 +2,7 @@ import { Button } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { addTodo } from "../redux/cart/action";
 
 import "./Description.css";
@@ -34,7 +34,7 @@ export const Description = () => {
       });
 
     return () => {};
-  }, []);
+  }, [item]);
 
   return (
     <div className="desc">

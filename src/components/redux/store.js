@@ -9,7 +9,7 @@ const rootReducer = combineReducers({
   cart: storeReducer,
   item: itemReducer,
   signup: signupReducer,
-  login: loginReducer
+  login: loginReducer,
 });
 
 export const store = createStore(rootReducer);

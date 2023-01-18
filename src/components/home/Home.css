@@ -5,9 +5,7 @@
   margin-top: 10px;
 }
 .Main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  width: 99%;
   margin: auto;
   background-color: linen;
 }
@@ -21,4 +19,8 @@
   background-image: url("./img1.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+.imglst{
+  width:100%;
+  margin: auto;
 }

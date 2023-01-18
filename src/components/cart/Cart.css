@@ -5,22 +5,31 @@
   background-size: 100% 100%;
 }
 
-.emptycart{
-  background-image: url("./emptycartimg.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 500px;
+.emptycart {
+  width: 98%;
+  margin: auto;
+  height: 600px;
 }
-.emptycart>button{
-  border:none;
-  background-color: orangered;
-  color:white;
-  font-weight: bolder;
-  border-radius: 20px;
-  padding:20px 50px;
-  margin-top:380px;
-  margin-left:85vh;
 
+.emptycart div:nth-child(1) {
+  height: 85%;
+  width: 100%;
+  margin: auto;
+}
+.emptycart div:nth-child(1) > img {
+  height: 100%;
+  width: 100%;
+}
+.emptycart div:nth-child(2) {
+  text-align: center;
+}
+.emptycart div:nth-child(2) > button {
+  border: none;
+  background-color: orangered;
+  color: white;
+  font-weight: bolder;
+  padding: 20px 40px;
+  border-radius: 10px;
 }
 .main1 {
   display: grid;

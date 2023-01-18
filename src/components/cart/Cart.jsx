@@ -10,7 +10,7 @@ export const Cart = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [totalPrice, setTotalPrice] = useState(0);
-
+   
   const handleDelete = (id) => {
     dispatch(removeItem(id));
   };
@@ -28,6 +28,10 @@ export const Cart = () => {
   if (items.length == 0) {
     return (
       <div className="emptycart">
+        <div>
+          <img src="https://www.seekpng.com/png/detail/117-1170538_404-your-cart-is-empty.png" alt="" />
+        </div>
+        <div>
         <button
           onClick={() => {
             navigate("/product");
@@ -35,6 +39,7 @@ export const Cart = () => {
         >
           Go Shopping
         </button>
+        </div>
       </div>
     );
   }

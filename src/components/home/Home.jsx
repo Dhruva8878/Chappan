@@ -55,7 +55,7 @@ export const Home = () => {
         </div>
 
         <div className="Main">
-          <ImageList sx={{ width: 1188, height: 350 }} cols={3} rowHeight={450}>
+          <ImageList className="imglst" sx={{ height: 350 }} gap={20}  cols={4} rowHeight={350}>
             {meals.map((e) => {
               return (
                 <div className="classbgcolor">
