@@ -22,6 +22,3 @@ export const storeReducer = (store = init, { type, payload }) => {
       return { ...store };
   }
 };
-
-// ...store,
-// todos:store.todos.filter((el)=>el.id!==payload)

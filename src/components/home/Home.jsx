@@ -38,7 +38,7 @@ export const Home = () => {
   }, [text]);
 
   return (
-    <div className="classbgcolor">
+    <div>
       <div>
         <Corosel />
 

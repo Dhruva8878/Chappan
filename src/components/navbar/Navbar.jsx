@@ -13,13 +13,19 @@ export const Navbar = () => {
   const [srcValue, setSrcValue] = useState(null);
   const [searchMeal, setSearchMeal] = useState([]);
   const pathname = window.location.pathname;
-  useEffect(() => {
-    handleSearch();
-  }, []);
+
+  const clearData = () => {
+    setSearchMeal([]);
+    setSrcValue("");
+  };
 
   useEffect(() => {
     setSearchMeal([]);
   }, [srcValue]);
+
+  useEffect(() => {
+    clearData();
+  }, [pathname]);
 
   const handleSearch = () => {
     if (srcValue === "") {
@@ -35,100 +41,109 @@ export const Navbar = () => {
   };
 
   return (
-    <>
-      <div className="Navbox">
-        <div className="box1">
-          <div></div>
-          <div>
-            <Link to={"/"}>
-              {" "}
-              <h3>Home</h3>{" "}
-            </Link>
-            <Link to={"/product"}>
-              {" "}
-              <h3>Product</h3>
-            </Link>
-            <Link to={"/cart"}>
-              <h3>Cart</h3>
-            </Link>
-            <Link to={"/about"}>
-              <h3>About</h3>
-            </Link>
-            {data ? (
-              <div className="user">
-                <h3 className="user1">Hi, {data.name}</h3>
-                <p
-                  className="user2"
-                  onClick={() => {
-                    dispatch(logoutUser(null));
-                  }}
-                >
-                  Logout
-                </p>
-              </div>
-            ) : (
-              <Link to={"/login"}>
-                <h3>Login</h3>
-              </Link>
-            )}
-          </div>
-        </div>
-        <div className="box2">
-          <h1 style={{ marginTop: pathname == "/" ? "-20px" : "" }}>Chappan</h1>
-          <h1 style={{ marginTop: pathname == "/" ? "-20px" : "" }}>
-            Discover the best food
-          </h1>
-          {pathname === "/" ? (
-            <div
-              className="navinp"
-              style={{ marginTop: pathname == "/" ? "-20px" : "" }}
-            >
-              <select name="" id="">
-                <option value="indore">Indore</option>
-              </select>
-              <form action=""></form>
-              <input
-                type="text"
-                placeholder="Get the delicious food of Chappan !!!"
-                onInput={(e) => {
-                  setSrcValue(e.target.value);
+    <div className="Navbox">
+      <div className="box1">
+        <div></div>
+        <div>
+          <Link to={"/"}>
+            {" "}
+            <h3>Home</h3>{" "}
+          </Link>
+          <Link to={"/product"}>
+            {" "}
+            <h3>Product</h3>
+          </Link>
+          <Link to={"/cart"}>
+            <h3>Cart</h3>
+          </Link>
+          <Link to={"/about"}>
+            <h3>About</h3>
+          </Link>
+          {data ? (
+            <div className="user">
+              <h3 className="user1">Hi, {data.name}</h3>
+              <p
+                className="user2"
+                onClick={() => {
+                  dispatch(logoutUser(null));
                 }}
-              />
+              >
+                Logout
+              </p>
+            </div>
+          ) : (
+            <Link to={"/login"}>
+              <h3>Login</h3>
+            </Link>
+          )}
+        </div>
+      </div>
+      <div className="box2">
+        <h1 style={{ marginTop: pathname == "/" ? "-20px" : "" }}>Chappan</h1>
+        <h1 style={{ marginTop: pathname == "/" ? "-20px" : "" }}>
+          Discover the best food
+        </h1>
+        {pathname === "/" ? (
+          <div
+            className="navinp"
+            style={{ marginTop: pathname == "/" ? "-20px" : "" }}
+          >
+            <select name="" id="">
+              <option value="indore">Indore</option>
+            </select>
+            <form action=""></form>
+            <input
+              type="text"
+              value={srcValue}
+              placeholder="Search the delicious food of Chappan !!!"
+              onInput={(e) => {
+                setSrcValue(e.target.value);
+              }}
+            />
+            {srcValue?.length && (
+              <span
+                onClick={clearData}
+                style={{ color: "grey", padding: "5px", cursor: "pointer" }}
+              >
+                X
+              </span>
+            )}
+            <span title={"Click to search"}>
               <SearchIcon
                 onClick={handleSearch}
                 style={{ color: "grey", padding: "5px" }}
                 sx={{ "&:hover": { cursor: "pointer", color: "green" } }}
               />
+            </span>
+          </div>
+        ) : (
+          <></>
+        )}
+        {pathname === "/" ? (
+          searchMeal ? (
+            <div className="searchmeal">
+              {searchMeal.map((e) => {
+                return (
+                  <div
+                    onClick={() => {
+                      dispatch(addItemName(e.strMeal));
+                      navigate("/description");
+                    }}
+                    className="searchmealchild"
+                  >
+                    <img src={e.strMealThumb} alt="" />
+                    <p>{e.strMeal}</p>
+                  </div>
+                );
+              })}
             </div>
           ) : (
             <></>
-          )}
-          {pathname === "/" ? (
-            searchMeal ? (
-              <div className="searchmeal">
-                {searchMeal.map((e) => {
-                  return (
-                    <div
-                      onClick={() => {
-                        dispatch(addItemName(e.strMeal));
-                        navigate("/description");
-                      }}
-                      className="searchmealchild"
-                    >
-                      <img src={e.strMealThumb} alt="" />
-                      <p>{e.strMeal}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            ) : (
-              <></>
-            )
-          ) : (
-            <></>
-          )}
-        </div>
+          )
+        ) : (
+          <></>
+        )}
       </div>
-    </>
+    </div>
   );
 };

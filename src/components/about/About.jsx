@@ -1,4 +1,5 @@
 import "./About.css";
+import chappan from './chappanlogo.png'
 
 export const About = () => {
   return (
@@ -19,8 +20,8 @@ export const About = () => {
         </div>
         <div>
           <img
-            src="https://b.zmtcdn.com/web/about/a7b0a36d5107f3590895981dab2eeac31563208212.jpeg?output-format=webp"
-            alt=""
+            src={chappan}
+            alt="chappan"
           />
         </div>
       </div>
